@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GOVERNMENT EFFICIENCY COMMISSION</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/mainlogo5a.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/mainlogo5a.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/mainlogo5a.png">
+    <script src="https://kit.fontawesome.com/22f7957471.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">  
+</head>
+
+<style>
+
+
+@font-face {
+    font-family: 'Bohemian-typewriter';
+      src:  url('assets/fonts/Bohemian-typewriter.ttf.woff') format('woff'),
+      url('assets/fonts/Bohemian-typewriter.ttf.svg#Bohemian-typewriter') format('svg'),
+      url('assets/fonts/Bohemian-typewriter.ttf.eot'),
+      url('assets/fonts/Bohemian-typewriter.eot?#iefix') format('embedded-opentype');
+      url('') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin-Sketch-Regular';
+    src:url('assets/fonts/Cabin-Sketch-Regular.ttf.woff') format('woff'),
+        url('assets/fonts/Cabin-Sketch-Regular.ttf.svg#Cabin-Sketch-Regular') format('svg'),
+        url('assets/fonts/Cabin-Sketch-Regular.ttf.eot'),
+        url('assets/fonts/Cabin-Sketch-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'Anton Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anton Regular'), url('assets/fonts/Anton-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anton'), url('assets/fonts/anton.woff') format('woff');
+    }
+
+    .btn a {
+        text-decoration: none;
+    }
+
+    body {
+        font-family: 'Anton';
+    }
+
+
+    a {
+        color:#000000;
+        text-decoration: none;
+    }
+@media (max-width: 767px) {
+    .intro-text-ca {
+        font-size: 0.7em !important;
+    }
+  
+    .mobilfix_title {
+        font-size: 2em !important;
+    }
+  
+    .mobilfix {
+        margin-top: -60px !important;
+    }
+
+    #copyButton {
+        display: none;
+    }
+}
+
+.navbar-shrink {
+    background: #b51212 !important;
+    opacity: 0.95;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .phohebgheader {
+        background-size: cover!important;
+        background-position: center!important;
+        background-repeat: no-repeat!important;
+    }
+
+    .phonebgabout {
+        background-position: right!important; 
+    }
+
+    .phonebgpresale {
+        background-position: center!important;
+        background-repeat: no-repeat!important;
+    }
+
+    .phonebgroadmap {
+        background-size: auto!important;
+        background-repeat: no-repeat!important;
+    }
+
+    .mobileabout {
+        background-size: contain;
+    }
+
+   
+}
+
+@media (max-width: 996px) {
+.mobilca {
+      font-size: 0.8em!important;
+    }
+
+    .mobilcaimg {
+      display: none;
+    }
+  }
+
+.phohebgheader {
+    background-size: cover!important;
+    background-position-y: center;
+    background: url(assets/img/mainbg3.webp);
+    /*background-image: linear-gradient(to top right,#f7f6f4,silver);*/
+    /*background-color: #e0dfde;*/
+    /*background: linear-gradient(0deg, rgba(17,17,17,0.9), rgba(17,17,17,0.9)),url(assets/img/main_bg_texture.png);*/
+}
+
+.phonebgabout {
+    background-size: cover;
+    /*background-position: top;*/
+    background-attachment: fixed;
+    background-image: url(assets/img/ninjabg.jpg);
+}
+
+.phonebgpresale {
+    background-size: cover!important;
+    background-attachment: fixed;
+    background-repeat: no-repeat!important;
+    background: url(assets/img/prebg.jpg);
+}
+
+.phonebgroadmap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(assets/img/secbg.jpg);
+}
+
+.progress-bar-min {
+      background-color: gray;
+    }
+
+.progress-bar-sc {
+      background-color: rgb(211, 3, 3);
+}
+
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  background-color:#f1f2ddbd;
+  pointer-events: none;
+  animation: float 5s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+
+/* CSS */
+.button-74 {
+  background-color: #c83418;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #cfcfce;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+
+  #main_image{
+  margin-top: 70px;
+}
+}
+
+
+
+.icon-hover:hover {
+    transform: rotate(-20deg);
+    transition: transform 0.3s;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.telegram-link:hover {
+    background-color: #FFA07A!important;
+}
+
+.twitter-link:hover {
+    background-color: #FFA07A!important;
+}
+
+.chart-link:hover {
+    background-color: #FFA07A!important;
+}
+
+
+html {
+            scrollbar-color: auto;
+            overflow-y: scroll;
+            scrollbar-color: red blue;
+        }
+
+
+        @keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.element {
+  animation: bounceIn 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+  </style>
+  
+  <section id="home"></section>
+  <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    
+      <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+          <div class="container">
+              <button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item nav-link"><a class="nav-link" href="#home" style="font-family: 'Bohemian-typewriter';color:#0f339d;font-size: 2em;border-radius: 30px;">HOME</a></li>
+                      <li class="nav-item nav-link"><a class="nav-link" href="#about" style="font-family: 'Bohemian-typewriter';color:#0f339d;font-size: 2em;border-radius: 30px;">ABOUT</a></li>
+                      <li class="nav-item nav-link"><a class="nav-link" href="#tokenomics" style="font-family: 'Bohemian-typewriter';color:#0f339d;font-size: 2em;border-radius: 30px;">TOKENOMICS</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <header class="phohebgheader masthead h-100" style="position: relative; overflow: hidden;">
+        <div class="intro-body">
+            <div class="container mobilfix">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center" style="position: relative;">
+                        <img data-aos="fade-up" id="main_image" class="img-fluid" src="assets/img/mainlogo5a.png" style="width: 500px;;margin-bottom: 0px;">
+                       
+                        
+                        <h1 class="jello brand-heading mobilfix_title" style="font-family: 'Bohemian-typewriter', serif; font-size: 1.5em;color:#0f339d;z-index: 2; position: relative;background-color: white;display: block;border-radius: 30px;padding: 0px 50px 0px 50px">GOVERNMENT EFFICIENCY COMMISSION</h1>
+                        <p class="jello intro-text" style="margin-top:40px;z-index: 2; position: relative;">
+                          <span><a href="https://t.me/GovtEfficiencyCommission" target="_blank"><img src="assets/img/icontelegram.png" alt="telegram" title="telegram" style="width:50px;background-color: #c11616;border-radius: 30px;"></a></span>
+                          <span><a href="https://x.com/GEC_Commission" target="_blank"><img src="assets/img/icontwitter.png" alt="twitter" title="twitter" style="width:50px;background-color: #c11616;border-radius: 30px;"></a></span>                       
+                          <span><a href="dexslink" target="_blank"><img src="assets/img/iconchart.png" alt="chart" title="chart" style="width:50px;background-color: #c11616;border-radius: 30px;"></a></span>
+                          <span><a href="dextlink" target="_blank"><img src="assets/img/icondex.png" alt="chart" title="dextools" style="width:35px;background-color: #c11616;border-radius: 30px;"></a></span><br>
+                          <div style="background-color: #ffffff;color: rgb(242, 39, 40);display: inline-block;padding: 10px;border-radius: 30px;">0x0000000000000000000000</div> 
+                      </p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </header>
+    
+    
+    <section class="text-center content-section mobileabout" id="" style="background-color: #171640;">
+        <div class="container">
+          
+            <div class="row">
+              <div class="col-lg-6 col-md-2 mx-auto">
+                <div>
+                  <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">🚨🇺🇸TRUMP: I&#39;M APPOINTING ELON TO LEAD A GOVERNMENT EFFICIENCY
+                      COMMISSION<br><br>&quot;I&#39;m appointing Elon Musk to lead a government efficiency commission focused on saving
+                      trillions by cutting fraud, waste, and abuse, while driving down inflation and costs.&quot;<br><br>Source: RSBN <a
+                        href="https://t.co/SFCusxQnpe">https://t.co/SFCusxQnpe</a> <a
+                        href="https://t.co/JmuNFHjs9L">pic.twitter.com/JmuNFHjs9L</a></p>&mdash; Mario Nawfal (@MarioNawfal) <a
+                      href="https://twitter.com/MarioNawfal/status/1841253860989682153?ref_src=twsrc%5Etfw">October 1, 2024</a>
+                  </blockquote>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                
+                <div>
+                  <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">Unless there is significant government reform, laws &amp; regulations will keep getting worse
+                      every year until every great endeavor, from high-speed rail between our cities to making life multiplanetary, is
+                      effectively illegal.<br><br>Trump supports a government efficiency commission to…</p>&mdash; Elon Musk (@elonmusk)
+                    <a href="https://twitter.com/elonmusk/status/1833755778924351663?ref_src=twsrc%5Etfw">September 11, 2024</a>
+                  </blockquote>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                
+                <div>
+                  <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">PRESIDENT TRUMP: &quot;I am going to appoint <a
+                        href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a>... to lead a government efficiency
+                      commission, tasked with saving trillions of dollars in fraud, waste and abuse — and driving down inflation and
+                      driving down costs.&quot; <a href="https://t.co/NT8hLmhUwm">pic.twitter.com/NT8hLmhUwm</a></p>&mdash; Trump War Room
+                    (@TrumpWarRoom) <a href="https://twitter.com/TrumpWarRoom/status/1841251456889868674?ref_src=twsrc%5Etfw">October 1,
+                      2024</a>
+                  </blockquote>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-center content-section" id="about" style="background-color: #e0dfde;font-family: 'Bohemian-typewriter';">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto" style="color:black;">
+                    <h2 data-aos="fade-down" style="font-size: 4em;font-family: 'Bohemian-typewriter';">About</h2>
+                    <div class="row text-center">
+                        <div class="col-md-6"><img class="img-fluid" data-aos="zoom-in" src="assets/img/mainlogo5a.png" style="width: 600px;">                 
+                        </div>
+                        <div class="col-md-6">
+                            <p data-aos="fade-up" style="text-align: justify;margin-top:1em;font-size: 1.5em;">The $GEC token represents a groundbreaking initiative inspired by a collaboration between Elon Musk and Donald Trump,
+                            aimed at transforming government operations for efficiency, transparency, and cost-effectiveness.</p>
+                            <p data-aos="fade-up" style="text-align: justify;margin-top:1em;font-size: 1.5em;">$GEC token symbolizes a commitment to reducing government waste. Holders of the token contribute to a fund that supports
+                            initiatives and technologies aimed at enhancing government efficiency.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <p data-aos="fade-up" style="text-align: justify;margin-top:1em;font-size: 1.5em;">$GEC stands at the forefront of a movement towards smarter, more accountable governance. It's not just a token but a
+                            symbol of a future where technology and community governance could redefine how public funds are managed, aiming for a
+                            government that's by the people, for the people, and truly efficient.</p>
+                        </div>                    
+                    </div>
+                </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="text-center content-section" id="tokenomics" style="background-color: #e0dfde; background-size: cover;background-image: url(assets/img/usa_bg_1.webp);">
+        <div class="container">
+            <h2 data-aos="fade-down" style="font-family: 'Bohemian-typewriter';font-size: 3em;color:#000000">TOKENOMICS</h2>
+            <div class="row">
+              <div class="col-md-4" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                  <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                    <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">NAME:</div>
+                    <div id="desc" style="margin-top: 10px; color: #3aa824; font-size: 1.2em;font-family: 'Bohemian-typewriter">
+                        GOVERNMENT EFFICIENCY COMMISSION
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                    <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                      <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">TICKER:</div>
+                      <div id="desc" style="margin-top: 10px; color: #3aa824; font-size: 2em;font-family: 'Bohemian-typewriter">
+                        $GEC
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                    <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                      <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">TAX:</div>
+                      <div id="desc" style="margin-top: 10px; color: #3aa824; font-size: 2em;font-family: 'Bohemian-typewriter">
+                        0%
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                    <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                      <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">SUPPLY:</div>
+                      <div id="desc" style="margin-top: 10px; color: #3aa824; font-size: 2em;font-family: 'Bohemian-typewriter">
+                        1,000,000,000
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                    <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                      <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">LP:</div>
+                      <div id="desc" style="margin-top: 10px; color: #3aa824; font-size: 2em;font-family: 'Bohemian-typewriter">
+                        BURNED🔥
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-12" data-aos="zoom-in">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 20px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;box-shadow:10px 20px 8px rgba(0, 0, 0, 0.2)">
+                    <div style="flex: 1; display: flex; flex-direction: column; text-align: left;">
+                      <div id="tag" style="font-weight: bold; color: #000000; font-size: 2em;font-family: 'Bohemian-typewriter">CA:</div>
+                      <div class="mobilca" id="desc" style="margin-top: 10px; color: #3aa824; font-size: 2em;font-family: 'Bohemian-typewriter">
+                        0x0000000000000000000000
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+       
+
+    <footer style="background-color: #0f339d;">
+        <div class="container text-center">
+            <p style="font-family: 'Bohemian-typewriter';font-size: 2em;color:#ffffff">© 2024 $GEC - ALL RIGHTS RESERVED!</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+</body>
+</html>
